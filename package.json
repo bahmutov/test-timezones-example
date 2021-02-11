@@ -1,0 +1,16 @@
+{
+  "name": "test-timezones-example",
+  "version": "1.0.0",
+  "description": "Example of testing the same browser page in different timezones",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Gleb Bahmutov <gleb.bahmutov@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "6.4.0",
+    "prettier": "2.2.1"
+  }
+}
