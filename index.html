@@ -1,10 +1,14 @@
 <body>
+  <p>Language <span id="lang"></span></p>
+  <p>Locale date and time is</p>
   <pre>
     <output></output>
   </pre>
   <script type="module">
+    document.getElementById('lang').textContent = navigator.language
+
     const output = document.querySelector('output')
     const date = new Date(1479579154987)
-    output.textContent = date.toString()
+    output.textContent = date.toLocaleString()
   </script>
 </body>
