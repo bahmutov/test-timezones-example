@@ -1,14 +1,15 @@
 <body>
-  <p>Language <span id="lang"></span></p>
-  <p>Locale date and time is</p>
-  <pre>
-    <output></output>
-  </pre>
+  <p>Timezone <span id="timezone"></span></p>
+  <p>Current local time is <span id="local-time"></span></p>
   <script type="module">
-    document.getElementById('lang').textContent = navigator.language
+    document.getElementById(
+      'timezone',
+    ).textContent = Intl.DateTimeFormat().resolvedOptions().timeZone
 
-    const output = document.querySelector('output')
-    const date = new Date(1479579154987)
-    output.textContent = date.toLocaleString()
+    const date = new Date()
+    // let's have consistent formatting in a specific locale
+    document.getElementById('local-time').textContent = date.toLocaleString(
+      'en-GB',
+    )
   </script>
 </body>
