@@ -22,6 +22,8 @@ const runTests = (timeZone) => {
     record: true,
     ciBuildId,
     group: `${index} ${timeZone}`,
+    // load balance specs in each group
+    parallel: true,
     config: {
       trashAssetsBeforeRuns: false,
     },
