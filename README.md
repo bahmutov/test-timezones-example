@@ -2,6 +2,8 @@
 [![test-timezones-example](https://img.shields.io/endpoint?url=https://dashboard.cypress.io/badge/detailed/7n3hov&style=flat&logo=cypress)](https://dashboard.cypress.io/projects/7n3hov/runs) [![ci status][ci image]][ci url]
 > Example of testing the same browser page in different timezones
 
+Read [Testing Time Zones in Parallel](https://glebbahmutov.com/blog/testing-timezones/)
+
 ## Timezones
 
 - `America/New_York`
