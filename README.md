@@ -1,4 +1,4 @@
-# test-timezones-example
+# test-timezones-example [![test-timezones-example](https://img.shields.io/endpoint?url=https://dashboard.cypress.io/badge/detailed/7n3hov&style=flat&logo=cypress)](https://dashboard.cypress.io/projects/7n3hov/runs)
 > Example of testing the same browser page in different timezones
 
 ## Timezones

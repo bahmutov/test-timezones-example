@@ -8,13 +8,15 @@ const timeZones = [
 
 // https://on.cypress.io/module-api
 const cypress = require('cypress')
-
+const ciBuildId = Number(new Date())
 const runTests = (timeZone) => {
   process.env.TZ = timeZone
 
   // we can remove cypress/screenshots ourselves
   return cypress.run({
     record: true,
+    ciBuildId,
+    group: timeZone,
     config: {
       trashAssetsBeforeRuns: false,
     },
