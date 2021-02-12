@@ -11,14 +11,17 @@ const cypress = require('cypress')
 // on CI let Cypress use an appropriate environment variable
 // to link separate cypress runs into a single logical run
 const ciBuildId = process.env.CI ? null : Number(new Date())
+let index = 0
 const runTests = (timeZone) => {
   process.env.TZ = timeZone
+
+  index += 1
 
   // we can remove cypress/screenshots ourselves
   return cypress.run({
     record: true,
     ciBuildId,
-    group: timeZone,
+    group: `${index} ${timeZone}`,
     config: {
       trashAssetsBeforeRuns: false,
     },
