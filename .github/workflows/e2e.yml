@@ -11,6 +11,7 @@ jobs:
       - name: Cypress tests 🧪
         uses: cypress-io/github-action@v2
         with:
+          # use our custom command to run tests
           command: node ./test-timezones
         env:
           # pass the Dashboard record key as an environment variable
