@@ -8,7 +8,9 @@ const timeZones = [
 
 // https://on.cypress.io/module-api
 const cypress = require('cypress')
-const ciBuildId = Number(new Date())
+// on CI let Cypress use an appropriate environment variable
+// to link separate cypress runs into a single logical run
+const ciBuildId = process.env.CI ? null : Number(new Date())
 const runTests = (timeZone) => {
   process.env.TZ = timeZone
 
