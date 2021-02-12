@@ -14,6 +14,7 @@ const runTests = (timeZone) => {
 
   // we can remove cypress/screenshots ourselves
   return cypress.run({
+    record: true,
     config: {
       trashAssetsBeforeRuns: false,
     },

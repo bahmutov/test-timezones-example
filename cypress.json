@@ -2,5 +2,8 @@
   "fixturesFolder": false,
   "supportFile": false,
   "pluginsFile": false,
-  "video": false
+  "video": false,
+  "viewportHeight": 200,
+  "viewportWidth": 400,
+  "projectId": "7n3hov"
 }
